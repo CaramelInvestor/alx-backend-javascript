@@ -1,6 +1,10 @@
-import ClassRoom from './0-classroom.js';
+import ClassRoom from './0-classroom';
 
 export default function initializeRooms() {
-  const length = [19, 20, 34];
-  return length.map((size) => new ClassRoom(size));
+  const arr = [
+    new ClassRoom(19),
+    new ClassRoom(20),
+    new ClassRoom(34),
+  ];
+  return (arr);
 }
