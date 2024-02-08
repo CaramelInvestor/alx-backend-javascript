@@ -21,32 +21,32 @@ export default class HolbertonCourse {
     return this._name;
   }
 
-  set name(name) {
-    if (typeof name !== 'string') {
+  set name(na) {
+    if (typeof na !== 'string') {
       throw new TypeError('Name must be a string');
     }
-    this._name = name;
+    this._name = na;
   }
 
   get length() {
     return this._length;
   }
 
-  set length(size) {
-    if (typeof size !== 'number') {
+  set length(zise) {
+    if (typeof zise !== 'number') {
       throw new TypeError('Length must be a number');
     }
-    this._length = size;
+    this._length = zise;
   }
 
   get students() {
     return this._students;
   }
 
-  set students(newstudent) {
+  set students(stu) {
     if (!Array.isArray(stu)) {
       throw new TypeError('must be a array');
     }
-    this._students = newstudent;
+    this._students = stu;
   }
 }
